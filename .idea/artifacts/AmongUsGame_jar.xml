@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AmongUsGame:jar">
+    <output-path>$PROJECT_DIR$/../../../../../Dinnerbone Server/plugins</output-path>
+    <root id="archive" name="AmongUsGame.jar">
+      <element id="module-output" name="AmongUsGame" />
+    </root>
+  </artifact>
+</component>
