@@ -1,0 +1,7 @@
+main: org.devdhsclub.AmongUsGame.AmongUs
+name: AmongUsGame
+version: 1.0.0
+api-version: 1.16
+author: Liam & Ibrahim
+
+commands:
