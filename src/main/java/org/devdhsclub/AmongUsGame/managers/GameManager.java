@@ -10,7 +10,20 @@ public class GameManager {
     
     private AmongUs plugin; // Make an instance of the main class to inherent its methods, variables, etc.
     private GameState gameState; // Each game has a game state.
-    public GameManager (AmongUs plugin){ this.plugin = plugin; this.gameState = GameState.LOBBY;} // By default (on initialization) it is the LOBBY gamestate.
+    private int maxCrewmates;
+    private int maxImposters;
+    private int killCooldown; // Integer for now
+    private int emergencyMeetingCount; // The amount of emergency meetings that each player can use.
+    private int emergencyMeetingCooldown;
+    
+    
+    public GameManager (AmongUs plugin, int maxCrewmates, int maxImposters){
+        this.plugin = plugin;
+        this.gameState = GameState.LOBBY;// By default (on initialization) it is the LOBBY gamestate.
+        
+    }
+    
+    public GameState getGameState() { return gameState; }
     
     public void setGameState(GameState gameState) {
         this.gameState = gameState;

@@ -10,12 +10,13 @@ public class GameCommand implements CommandExecutor {
     
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         
-        if (cmd.getName().equalsIgnoreCase("au")){
+        if (cmd.getName().equalsIgnoreCase("amongus")){
             if (!(sender instanceof Player)){
                 sender.sendMessage(ChatColor.RED + "Player-only command!");
                 return true;
             }
             Player p = (Player) sender;
+            // Open GUI
             // Insert command logic here
         }
         
